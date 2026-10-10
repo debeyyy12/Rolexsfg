@@ -1085,7 +1085,7 @@ def main():
     logger.info("=" * 60)
 
     # Run mode
-        if USE_WEBHOOK and WEBHOOK_URL:
+    if USE_WEBHOOK and WEBHOOK_URL:
         app.run_webhook(
             listen="0.0.0.0",
             port=PORT,
@@ -1094,8 +1094,6 @@ def main():
             drop_pending_updates=True,
         )
     else:
-        import asyncio
-        asyncio.set_event_loop(asyncio.new_event_loop())
         app.run_polling(drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
 
 
