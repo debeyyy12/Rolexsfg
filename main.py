@@ -1094,7 +1094,10 @@ def main():
             drop_pending_updates=True,
         )
     else:
-        app.run_polling(drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
+        app.run_polling(
+            drop_pending_updates=True,
+            allowed_updates=Update.ALL_TYPES,
+        )
 
 
 if __name__ == "__main__":
