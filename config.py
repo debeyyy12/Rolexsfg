@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ========== BOT CONFIG ==========
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8495053693:AAFGI4W46SWbwpTGQApsIBhdvi0dTVHtOe4")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8390444092:AAF11Znyxs1ayPuDG7DlCcsSQFVnmpGErus")
 OWNER_ID = int(os.environ.get("OWNER_ID", "8128821116"))
 ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "8128821116").split(",") if x.strip()]
 
